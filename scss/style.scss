@@ -60,6 +60,9 @@ section{
 aside{
     width: 30%;
     background-color: white;
+    :not(h2,i){
+        word-spacing: 2rem;
+    }
 }
 section,aside{
     p,h2{
@@ -80,10 +83,23 @@ section,aside{
     }
     section>img{
         width: 80%;
-    }   
+    }  
+    section,aside{
+        width: 100%;
+    }
+    nav{
+        text-align: justify;
+    }
 }
 @media screen and (max-width: 560px){
     .container{
         flex-direction: column;
-    }   
+    }
+    nav{
+        flex-flow: column;
+        width: 100%;
+    }
+    aside{
+        display: none;
+    }
 }

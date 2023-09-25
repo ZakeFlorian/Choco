@@ -73,6 +73,9 @@ aside {
   width: 30%;
   background-color: white;
 }
+aside :not(h2, i) {
+  word-spacing: 2rem;
+}
 
 section p, section h2, aside p, aside h2 {
   margin: 30px;
@@ -94,9 +97,22 @@ section h2, aside h2 {
   section > img {
     width: 80%;
   }
+  section, aside {
+    width: 100%;
+  }
+  nav {
+    text-align: justify;
+  }
 }
 @media screen and (max-width: 560px) {
   .container {
     flex-direction: column;
+  }
+  nav {
+    flex-flow: column;
+    width: 100%;
+  }
+  aside {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
